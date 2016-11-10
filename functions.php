@@ -34,6 +34,17 @@ function _s_setup() {
 	 * provide it for us.
 	 */
 	add_theme_support( 'title-tag' );
+	
+	/*
+	 * Enable support for custom logo.
+	 *
+	 * @link https://developer.wordpress.org/reference/functions/add_theme_support/#custom-logo
+	 */
+	add_theme_support( 'custom-logo', array(
+		'height'      => 80,
+		'width'       => 320,
+		'flex-height' => true,
+	) );
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
